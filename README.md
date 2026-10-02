@@ -13,10 +13,21 @@ I build business solutions in NetSuite and web applications in Django, and I'm c
 | Frontend | HTML, CSS, JavaScript |
 | Tools | Git, GitHub |
 
+## 🚀 Featured Work
+
+> Client and production code is kept in private repositories. Summaries are shared here.
+
+- **School ERP Migration** — Moving a school management system from PHP CodeIgniter to Python Django.
+- **NetSuite Customizations** — SuiteScript solutions that automate business processes in NetSuite.
+
 ## 🌱 Currently
 
 - Migrating a school ERP from CodeIgniter to Django
 - Learning Django REST Framework, Docker, and automated testing
+
+## 📊 GitHub Stats
+
+![Balakrishna's GitHub stats](https://github-readme-stats.vercel.app/api?username=balakrishna-dev&show_icons=true&count_private=true&hide_border=true)
 
 ## 📫 Connect
 
