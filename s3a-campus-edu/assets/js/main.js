@@ -47,19 +47,6 @@
   navToggle.addEventListener('click', function () { setNav(!nav.classList.contains('open')); });
   $$('a', nav).forEach(function (a) { a.addEventListener('click', function () { setNav(false); }); });
 
-  /* ---------- Scroll spy ---------- */
-  var links = $$('.nav__link');
-  var sections = links.map(function (l) { return $(l.getAttribute('href')); }).filter(Boolean);
-  if ('IntersectionObserver' in window) {
-    var spy = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id); });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    sections.forEach(function (s) { spy.observe(s); });
-  }
-
   /* ---------- Reveal on scroll ---------- */
   var reveals = $$('.reveal');
   if ('IntersectionObserver' in window) {
@@ -120,10 +107,17 @@
     });
   });
 
-  /* ---------- Plan buttons prefill the lead form ---------- */
-  var leadForm = $('#leadForm');
-  $$('[data-plan]').forEach(function (b) {
-    b.addEventListener('click', function () { leadForm.elements.plan.value = b.dataset.plan; });
+  /* ---------- Module category filter ---------- */
+  var chips = $$('.chip');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      var cat = chip.dataset.filter;
+      $$('.module[data-cat]').forEach(function (m) {
+        m.classList.toggle('is-hidden', cat !== 'all' && m.dataset.cat !== cat);
+      });
+    });
   });
 
   /* ---------- Demo popup (once per session) ---------- */
@@ -132,7 +126,7 @@
   function storageGet(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
   function storageSet(k, v) { try { sessionStorage.setItem(k, v); } catch (e) { /* ignore */ } }
   function openModal() {
-    if (popupShown || storageGet('s3a_popup') || storageGet('s3a_lead')) return;
+    if (popupShown || document.body.dataset.page === 'contact' || storageGet('s3a_popup') || storageGet('s3a_lead')) return;
     popupShown = true;
     storageSet('s3a_popup', '1');
     modal.classList.add('open');
@@ -174,7 +168,7 @@
 
   function toWhatsApp(data) {
     var lines = ['*New Demo Request — S3A Campus EDU*'];
-    var labels = { name: 'Name', phone: 'Mobile', institution: 'Institution', email: 'Email', city: 'City', role: 'Role', students: 'Students', plan: 'Plan' };
+    var labels = { name: 'Name', phone: 'Mobile', institution: 'Institution', email: 'Email', city: 'City', role: 'Role', students: 'Students', interest: 'Interested in' };
     Object.keys(labels).forEach(function (k) { if (data[k]) lines.push(labels[k] + ': ' + data[k]); });
     window.open('https://wa.me/' + CONFIG.whatsappNumber + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
   }
@@ -230,6 +224,5 @@
     });
   }
 
-  submitLead(leadForm);
-  submitLead($('#quickForm'));
+  $$('#leadForm, #quickForm').forEach(submitLead);
 })();

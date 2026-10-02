@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modules | S3A Campus EDU School ERP</title>
+  <meta name="description" content="Explore 24 integrated school ERP modules — admissions, fees, attendance, exams, timetable, transport, HR &amp; payroll, LMS, hostel, library and more.">
+  <meta name="keywords" content="school ERP, school management software, campus management, fee management, student information system, parent app, S3A Campus EDU">
+  <meta name="theme-color" content="#2b4dd8">
+  <meta property="og:title" content="Modules | S3A Campus EDU School ERP">
+  <meta property="og:description" content="Run your entire campus from one cloud platform. Admissions, fees, attendance, exams, transport, HR and mobile apps.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="modules">
+
+<!-- ============ ICON SPRITE ============ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></symbol>
+  <symbol id="i-exam" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h2M8 17h2M13 13l1.5 1.5L17 12M13 17h4"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="2"/><path d="M4 11h16M8 18v3M16 18v3M8 14.5h.01M16 14.5h.01"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 4v16M22 20v-8a3 3 0 0 0-3-3H2M2 17h20"/><circle cx="7" cy="12" r="1.5"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M10 7.5l4 2.5-4 2.5z"/></symbol>
+  <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2.5"/><path d="M14 10h5M14 14h3"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.4 7 22l5-3 5 3-1.2-8.6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  <symbol id="i-phone-d" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H8a6 6 0 1 1 5.7-7.9A4.5 4.5 0 1 1 17.5 19z"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3zM3 19a2 2 0 0 0 2 2h1v-7H3z"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-5h4v5M12 10h.01"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5z"/><path d="M6 12v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M5 16v-3h14v3M12 8v5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M3 21h18M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17M14 12h.01"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+</svg>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__info">
+      <!-- TODO: replace with your real phone / email -->
+      <a href="tel:+919999999999"><svg class="ic"><use href="#i-phone"/></svg> +91 99999 99999</a>
+      <a href="mailto:info@s3acampusedu.com"><svg class="ic"><use href="#i-mail"/></svg> info@s3acampusedu.com</a>
+    </div>
+    <div class="topbar__note">🎓 Admissions season offer — <strong>free data migration</strong> for new campuses</div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="S3A Campus EDU home">
+      <img src="assets/img/logo-mark.svg" alt="" width="40" height="40">
+      <span class="brand__text"><b>S3A</b> Campus <em>EDU</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="modules.html" class="nav__link active" aria-current="page">Modules</a>
+      <a href="solutions.html" class="nav__link">Solutions</a>
+      <a href="mobile-apps.html" class="nav__link">Mobile Apps</a>
+      <a href="about.html" class="nav__link">About Us</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="btn btn--primary nav__cta">Book Free Demo</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg class="ic"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="hero__bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="grid-dots"></span></div>
+  <div class="container reveal">
+    <div class="crumbs"><a href="index.html">Home</a><svg class="ic"><use href="#i-chevron"/></svg>Modules</div>
+    <h1>One Platform. <span class="grad-text">24 Powerful Modules.</span></h1>
+    <p>From the admission desk to the annual report card — every process on your campus, connected and automated.</p>
+    <div class="hero__cta">
+        <a href="contact.html" class="btn btn--primary btn--lg">Book Free Demo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="btn btn--ghost btn--lg"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp Us</a>
+      </div>
+    <div class="hero-chips"><span><svg class="ic"><use href="#i-layers"/></svg> Fully integrated</span><span><svg class="ic"><use href="#i-cloud"/></svg> 100% cloud</span><span><svg class="ic"><use href="#i-phone-d"/></svg> Mobile ready</span><span><svg class="ic"><use href="#i-shield"/></svg> Secure &amp; backed up</span></div>
+  </div>
+</section>
+<section class="section" id="all-modules">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Complete ERP Suite</span>
+      <h2>Pick a Category to Explore</h2>
+      <p>Start with the modules you need today and switch on more as you grow.</p>
+    </div>
+    <div class="chips reveal" role="group" aria-label="Filter modules"><button class="chip active" data-filter="all">All Modules</button><button class="chip" data-filter="academic">Academic</button><button class="chip" data-filter="finance">Finance</button><button class="chip" data-filter="operations">Operations</button><button class="chip" data-filter="communication">Communication</button><button class="chip" data-filter="management">Management</button></div>
+    <div class="modules">
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c1"><svg class="ic"><use href="#i-users"/></svg></span><h3>Admissions &amp; Enquiry</h3><p>Online application forms, enquiry follow-ups, entrance tests and one-click enrolment.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c4"><svg class="ic"><use href="#i-idcard"/></svg></span><h3>Student Information System</h3><p>Complete digital student profiles — documents, siblings, health and history in one place.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c3"><svg class="ic"><use href="#i-calcheck"/></svg></span><h3>Attendance</h3><p>Biometric, RFID or app-based attendance with instant absence alerts to parents.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c9"><svg class="ic"><use href="#i-exam"/></svg></span><h3>Examinations &amp; Report Cards</h3><p>CBSE / State / IB grading, mark entry, hall tickets and beautiful report cards.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c5"><svg class="ic"><use href="#i-clock"/></svg></span><h3>Timetable</h3><p>Clash-free timetable generator with substitutions and teacher workload balance.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c2"><svg class="ic"><use href="#i-pencil"/></svg></span><h3>Homework &amp; Diary</h3><p>Daily homework, class diary and assignments shared instantly with parents.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c6"><svg class="ic"><use href="#i-monitor"/></svg></span><h3>LMS &amp; Online Classes</h3><p>Study material, recorded lessons, online tests and live classes.</p></article>
+      <article class="module reveal" data-cat="academic"><span class="module__cat">Academic</span><span class="module__icon c10"><svg class="ic"><use href="#i-book"/></svg></span><h3>Library</h3><p>Barcode cataloguing, issue/return, fines and digital library access.</p></article>
+      <article class="module reveal" data-cat="finance"><span class="module__cat">Finance</span><span class="module__icon c2"><svg class="ic"><use href="#i-wallet"/></svg></span><h3>Fee Management</h3><p>Flexible fee structures, concessions, installments, reminders and digital receipts.</p></article>
+      <article class="module reveal" data-cat="finance"><span class="module__cat">Finance</span><span class="module__icon c1"><svg class="ic"><use href="#i-card"/></svg></span><h3>Online Payments</h3><p>UPI, cards and net banking with automatic reconciliation to student ledgers.</p></article>
+      <article class="module reveal" data-cat="finance"><span class="module__cat">Finance</span><span class="module__icon c3"><svg class="ic"><use href="#i-award"/></svg></span><h3>Accounts &amp; Finance</h3><p>Income, expenses, ledgers, bank reconciliation and Tally-ready exports.</p></article>
+      <article class="module reveal" data-cat="finance"><span class="module__cat">Finance</span><span class="module__icon c7"><svg class="ic"><use href="#i-brief"/></svg></span><h3>HR &amp; Payroll</h3><p>Staff records, leave, salary processing, payslips, PF/ESI and statutory reports.</p></article>
+      <article class="module reveal" data-cat="operations"><span class="module__cat">Operations</span><span class="module__icon c6"><svg class="ic"><use href="#i-bus"/></svg></span><h3>Transport &amp; GPS</h3><p>Routes, stops, vehicle tracking and live bus location for parents.</p></article>
+      <article class="module reveal" data-cat="operations"><span class="module__cat">Operations</span><span class="module__icon c11"><svg class="ic"><use href="#i-bed"/></svg></span><h3>Hostel</h3><p>Room allotment, mess management, visitor logs and hostel fees.</p></article>
+      <article class="module reveal" data-cat="operations"><span class="module__cat">Operations</span><span class="module__icon c12"><svg class="ic"><use href="#i-box"/></svg></span><h3>Inventory &amp; Store</h3><p>Purchase orders, stock, uniform and book sales with vendor management.</p></article>
+      <article class="module reveal" data-cat="operations"><span class="module__cat">Operations</span><span class="module__icon c4"><svg class="ic"><use href="#i-door"/></svg></span><h3>Front Office &amp; Visitors</h3><p>Visitor passes, gate entries, call logs and postal records.</p></article>
+      <article class="module reveal" data-cat="communication"><span class="module__cat">Communication</span><span class="module__icon c8"><svg class="ic"><use href="#i-msg"/></svg></span><h3>SMS, WhatsApp &amp; Notices</h3><p>Circulars and alerts over SMS, WhatsApp, email and push notifications.</p></article>
+      <article class="module reveal" data-cat="communication"><span class="module__cat">Communication</span><span class="module__icon c9"><svg class="ic"><use href="#i-phone-d"/></svg></span><h3>Parent &amp; Student Apps</h3><p>Branded Android and iOS apps that keep families connected.</p></article>
+      <article class="module reveal" data-cat="communication"><span class="module__cat">Communication</span><span class="module__icon c2"><svg class="ic"><use href="#i-globe"/></svg></span><h3>School Website &amp; CMS</h3><p>A modern website with news, events, gallery and online admissions.</p></article>
+      <article class="module reveal" data-cat="communication"><span class="module__cat">Communication</span><span class="module__icon c5"><svg class="ic"><use href="#i-image"/></svg></span><h3>Events &amp; Gallery</h3><p>School calendar, event invites and photo albums for parents.</p></article>
+      <article class="module reveal" data-cat="management"><span class="module__cat">Management</span><span class="module__icon c3"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Analytics &amp; Reports</h3><p>200+ ready reports and live dashboards for faster decisions.</p></article>
+      <article class="module reveal" data-cat="management"><span class="module__cat">Management</span><span class="module__icon c7"><svg class="ic"><use href="#i-network"/></svg></span><h3>Multi-Branch Control</h3><p>Manage every branch centrally with group-level reports and settings.</p></article>
+      <article class="module reveal" data-cat="management"><span class="module__cat">Management</span><span class="module__icon c1"><svg class="ic"><use href="#i-shield"/></svg></span><h3>Roles &amp; Security</h3><p>Granular role-based permissions, audit logs and daily backups.</p></article>
+      <article class="module reveal" data-cat="management"><span class="module__cat">Management</span><span class="module__icon c10"><svg class="ic"><use href="#i-idcard"/></svg></span><h3>ID Cards &amp; Certificates</h3><p>ID cards, TC, bonafide and custom certificates with your branding.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section section--tint">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Deep Dive</span>
+      <h2>Built Around How Schools Really Work</h2>
+    </div>
+    <div class="feature-rows">
+      <div class="feature-row reveal">
+        <div><span class="feature-row__num">01 · FINANCE</span><h3>Fee Collection Without the Chaos</h3><p>Define any fee structure once, and S3A handles invoices, reminders, online payments and receipts automatically.</p><ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg> Class-wise, installment and transport fee plans</li><li><svg class="ic"><use href="#i-check"/></svg> Concessions, scholarships and late-fee rules</li><li><svg class="ic"><use href="#i-check"/></svg> UPI, card and net-banking payments</li><li><svg class="ic"><use href="#i-check"/></svg> Defaulter lists and one-click reminders</li></ul></div>
+        <div class="tabpanel__art feature-row__art art-mgmt"><div class="ring" style="--p:86"><span>86%</span><small>Fees Collected</small></div><div class="mini-bars"><i style="--h:40%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:90%"></i><i style="--h:65%"></i></div></div>
+      </div>
+      <div class="feature-row reverse reveal">
+        <div><span class="feature-row__num">02 · ACADEMICS</span><h3>Attendance in Seconds, Not Minutes</h3><p>Teachers mark attendance from their phone or it flows in from biometric and RFID devices — and parents are notified instantly.</p><ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg> Period-wise or day-wise attendance</li><li><svg class="ic"><use href="#i-check"/></svg> Biometric &amp; RFID device integration</li><li><svg class="ic"><use href="#i-check"/></svg> Automatic SMS / app alerts for absentees</li><li><svg class="ic"><use href="#i-check"/></svg> Monthly registers and analytics</li></ul></div>
+        <div class="tabpanel__art feature-row__art art-teach"><div class="att-grid"><i class="p"></i><i class="p"></i><i class="a"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="l"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="a"></i></div><small>Class 7A · 38 / 40 present</small></div>
+      </div>
+      <div class="feature-row reveal">
+        <div><span class="feature-row__num">03 · EXAMINATIONS</span><h3>Report Cards That Make an Impression</h3><p>Configure your board's grading pattern and generate beautifully designed report cards for the whole school in one click.</p><ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg> CBSE, ICSE, State Board &amp; IB patterns</li><li><svg class="ic"><use href="#i-check"/></svg> Marks entry by teachers with auto-grading</li><li><svg class="ic"><use href="#i-check"/></svg> Hall tickets, mark sheets &amp; rank lists</li><li><svg class="ic"><use href="#i-check"/></svg> Results published straight to parent apps</li></ul></div>
+        <div class="tabpanel__art feature-row__art art-student"><div class="score"><small>Annual Result</small><strong>A+</strong><span>92.6%</span></div><div class="subj"><p><b>Maths</b><i style="--w:95%"></i></p><p><b>Science</b><i style="--w:90%"></i></p><p><b>English</b><i style="--w:88%"></i></p></div></div>
+      </div>
+      <div class="feature-row reverse reveal">
+        <div><span class="feature-row__num">04 · COMMUNICATION</span><h3>Every Parent, Instantly Informed</h3><p>Replace paper circulars and phone trees with targeted messages that reach parents in seconds.</p><ul class="ticks"><li><svg class="ic"><use href="#i-check"/></svg> SMS, WhatsApp, email &amp; push notifications</li><li><svg class="ic"><use href="#i-check"/></svg> Class, section or individual targeting</li><li><svg class="ic"><use href="#i-check"/></svg> Two-way moderated parent–teacher chat</li><li><svg class="ic"><use href="#i-check"/></svg> Delivery reports for every message</li></ul></div>
+        <div class="tabpanel__art feature-row__art art-parent"><div class="chat"><p class="in">Riya was marked present today ✅</p><p class="in">Fee of ₹12,500 due on 10 Oct</p><p class="out">Paid via UPI 👍</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--dark" id="process">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow light">Simple Onboarding</span>
+      <h2>Go Live in 4 Easy Steps</h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span>01</span><h4>Free Demo</h4><p>We show S3A Campus EDU with your institution's real workflows.</p></li>
+      <li class="step reveal"><span>02</span><h4>Configuration</h4><p>Classes, fee structures, staff and branding set up for you.</p></li>
+      <li class="step reveal"><span>03</span><h4>Data Migration</h4><p>We import students, staff and balances from Excel or your old software.</p></li>
+      <li class="step reveal"><span>04</span><h4>Training &amp; Launch</h4><p>Hands-on training for staff, then your apps go live for parents.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band__box reveal">
+      <div><h2>See Every Module in a Live Demo</h2><p>Our consultant will walk you through the modules that matter most to your institution.</p></div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--light btn--lg">Book Free Demo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="tel:+919999999999" class="btn btn--outline-light btn--lg"><svg class="ic"><use href="#i-phone"/></svg> Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="brand brand--light"><img src="assets/img/logo-mark.svg" alt="" width="40" height="40"><span class="brand__text"><b>S3A</b> Campus <em>EDU</em></span></a>
+      <p>Smart, secure and simple campus management software for schools, colleges and education groups.</p>
+    </div>
+    <div><h5>Modules</h5><a href="modules.html">Admissions</a><a href="modules.html">Fee Management</a><a href="modules.html">Attendance</a><a href="modules.html">Examinations</a><a href="modules.html">Transport &amp; GPS</a></div>
+    <div><h5>Company</h5><a href="about.html">About Us</a><a href="solutions.html">Solutions</a><a href="mobile-apps.html">Mobile Apps</a><a href="contact.html#faq">FAQ</a><a href="contact.html">Contact</a></div>
+    <div><h5>Get in Touch</h5><a href="tel:+919999999999">+91 99999 99999</a><a href="mailto:info@s3acampusedu.com">info@s3acampusedu.com</a><span>Hyderabad, India</span></div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© <span id="year">2026</span> S3A Campus EDU. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp + back to top -->
+<!-- TODO: replace 919999999999 with your WhatsApp number (country code, no +) — also in assets/js/main.js -->
+<a class="wa-float" href="https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20a%20demo%20of%20S3A%20Campus%20EDU" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ic"><use href="#i-arrow"/></svg></button>
+
+<!-- Demo popup -->
+<div class="modal" id="demoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" data-close aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
+    <span class="eyebrow">Limited Slots This Week</span>
+    <h3 id="modalTitle">Get a Free Personalised Demo</h3>
+    <p>Share your number and our consultant will call you back.</p>
+    <form id="quickForm" novalidate>
+      <label class="field"><span>Your Name *</span><input type="text" name="name" required placeholder="Full name"></label>
+      <label class="field"><span>Mobile Number *</span><input type="tel" name="phone" required placeholder="10-digit mobile" pattern="[0-9+\s-]{10,15}"></label>
+      <label class="field"><span>Institution Name *</span><input type="text" name="institution" required placeholder="School / College name"></label>
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn btn--primary btn--block">Call Me Back <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
