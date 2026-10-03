@@ -22,7 +22,7 @@
 
 I am a techno-functional consultant who understands both the **business process** and the **code behind it**. I can talk to finance and operations teams, then build the solution myself in NetSuite or Django.
 
-- **[X]+ years** of experience in ERP and web development
+- **5 + years** of experience in ERP and web development
 - Strong in **NetSuite and SuiteScript**, plus **Python/Django** and **PHP/CodeIgniter**
 - Comfortable moving legacy PHP systems to modern Django
 
